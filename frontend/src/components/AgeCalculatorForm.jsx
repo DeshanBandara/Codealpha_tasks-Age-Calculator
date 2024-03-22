@@ -16,11 +16,16 @@ const AgeCalculatorForm = ({ calculateAge }) => {
         calculateAge(birthDay)
     }
 
-
   return (
     <div>
         <form onSubmit={handleSubmit}>
-            <input type="date" name="" value={birthDay} onChange={handleChangeDate} />
+            <input 
+                type="date" 
+                name="" 
+                value={birthDay} 
+                onChange={handleChangeDate} 
+            />
+            <br/>
             <button disabled={!birthDay} type='submit'>Calculate Age</button>
         </form>
     </div>
@@ -30,7 +35,5 @@ const AgeCalculatorForm = ({ calculateAge }) => {
 AgeCalculatorForm.propTypes = {
     calculateAge: PropTypes.func.isRequired
 }
-
-
 
 export default AgeCalculatorForm
