@@ -23,11 +23,18 @@ function App() {
   }
 
   return (
+    
     <div>
-      <h1>Age Calculator</h1>
-      <AgeCalculatorForm calculateAge={calculateAge} />
-      {age && <AgeResult age={age} />}
-
+        <div className="container">
+            <h1>
+            Age Calculator
+            </h1>
+            <p>
+                Enter your age to calculate in years, months and days.
+            </p>
+            <AgeCalculatorForm calculateAge={calculateAge} />
+            {age && <AgeResult age={age} />}
+        </div>
     </div>
   )
 }
