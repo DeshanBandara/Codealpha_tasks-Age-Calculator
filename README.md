@@ -24,10 +24,9 @@ To run this project locally, follow these steps:
 
    
    git clone <https://github.com/DeshanBandara/Age-Calculator.git>
-   cd frontend,
    
-   npm install,
-   
+   cd frontend
+   npm install
    npm run dev
 
 
